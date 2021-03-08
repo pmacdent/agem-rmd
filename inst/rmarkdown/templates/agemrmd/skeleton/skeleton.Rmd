@@ -4,22 +4,55 @@ author: "Author Name"
 institute: "NHS Organisation"
 date: "The Date"
 output:
-  html_document2:
+  html_document:
+    anchor_sections: false
     css:
-      - default
       - css/nhsr.css
       - css/nhsr-fonts.css
   
 ---
 
+<img src="img/agem_logo_circles.png" style="position:absolute;top:0px;right:0px;" />
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Adding an RMarkdown Template
+# Heading 1
 
-This file is what a user will see when they select your template. Make sure that you update the fields in the yaml header. In particular you will want to update the `output` field to whatever format your template requires.
+## Heading 2
 
-This is a good place to demonstrate special features that your template provides. Ideally it should knit out-of-the-box, or at least contain clear instructions as to what needs changing.
+### Heading 3
 
-Finally, be sure to remove this message!
+#### Heading 4
+
+##### Heading 5
+
+###### Heading 6
+
+
+***
+
+Standard paragraph text
+
+<span class = "blue"> text with a coloured background </span>
+
+<span class = "dark-pink"> same but dark pink </span>
+
+> block quote
+
+| Right | Left | Default | Center |
+|------:|:-----|---------|:------:|
+|      1|     2|        3|       4|
+|      1|     2|        3|       4|
+|      1|     2|        3|       4|
+|      1|     2|        3|       4|
+
+Now for a chart
+
+``` {r}
+library(ggplot2)
+ggplot(cars, aes(speed, dist)) + geom_point()
+```
+
+after the chart
