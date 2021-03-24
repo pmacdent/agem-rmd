@@ -1,0 +1,136 @@
+:root {
+  --blue:        #005eb8;
+  --green:       #007f3b;
+  --yellow:      #ffeb3b;
+  --warm-yellow: #ffb81C;
+  --red:         #d5281b;
+  --dark-pink:   #7C2855;
+  --purple:      #330072;
+  --grey-1:      #4c6272;
+  --grey-2:      #768692;
+  --grey-3:      #aeb7bd;
+  --grey-4:      #d8dde0;
+  --grey-5:      #f0f4f5;
+  --white:       #ffffff;
+  --pale-yellow: #fff9c4;
+}
+
+html{
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+}
+*,*:before,*:after{
+  -moz-box-sizing:inherit;
+  -webkit-box-sizing:inherit;
+  box-sizing:inherit;
+}
+/*-- HEADINGS --*/
+
+h1.title {
+  font-size: 64px;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 1.25;
+  margin-bottom: 48px;
+  display: block;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 1.25;
+  margin-bottom: 24px;
+  display: block;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 1.25;
+  margin-bottom: 24px;
+  display: block;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+h4 {
+  font-size: 22px;
+  line-height: 1.25;
+  margin-bottom: 24px;
+  display: block;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+h5 {
+  font-size: 19px;
+  line-height: 1.25;
+  margin-bottom: 24px;
+  display: block;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+h6 {
+  font-size: 18px;
+  line-height: 1.25;
+  margin-bottom: 24px;
+  display: block;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+/*-- HORIZONTAL BARS --*/
+hr {
+  content:            none;
+  display:            block;
+  border:             none;
+  background-color:   var(--grey-1);
+  height:             0.08em;
+}
+
+/*-- TABLES --*/
+table {
+  margin: auto;
+  border-top: 1px solid var(--grey-2);
+  border-bottom: 1px solid var(--grey-2);
+}
+
+/*-- Table header --*/
+table thead th {
+  background-color: var(--blue);
+  color: var(--white);
+  border-bottom: 1px solid var(--grey-2);
+}
+
+/*-- Table rows (even) --*/
+thead, tfoot, tr:nth-child(even) {
+  background: var(--grey-5);
+}
+
+/*-- BLOCK QUOTE --*/
+blockquote {
+  background-color: var(--grey-5);
+  border-left: solid 5px var(--blue);
+  padding-left: 1em;
+}
+
+/* colour classes */
+.blue {
+  background-color: var(--blue);
+  color: var(--white);
+  padding:5px;
+}
+
+.dark-pink {
+  background-color: var(--dark-pink);
+  color: var(--white);
+  padding:5px;
+}
