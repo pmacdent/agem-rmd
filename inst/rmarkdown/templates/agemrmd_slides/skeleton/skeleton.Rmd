@@ -1,0 +1,58 @@
+---
+title: "Title"
+author: "Author Name"
+institute: "NHS Organisation"
+date: "The Date"
+output:
+  html_document:
+    anchor_sections: false
+    css:
+      - css/nhsr.css
+      - css/nhsr-fonts.css
+  
+---
+
+<img src="img/agem_logo_circles.png" style="position:absolute;top:0px;right:0px;" />
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Heading 1
+
+## Heading 2
+
+### Heading 3
+
+#### Heading 4
+
+##### Heading 5
+
+###### Heading 6
+
+
+***
+
+Standard paragraph text
+
+<span class = "blue"> text with a coloured background </span>
+
+<span class = "dark-pink"> same but dark pink </span>
+
+> block quote
+
+| Right | Left | Default | Center |
+|------:|:-----|---------|:------:|
+|      1|     2|        3|       4|
+|      1|     2|        3|       4|
+|      1|     2|        3|       4|
+|      1|     2|        3|       4|
+
+Now for a chart
+
+``` {r}
+library(ggplot2)
+ggplot(cars, aes(speed, dist)) + geom_point()
+```
+
+after the chart
