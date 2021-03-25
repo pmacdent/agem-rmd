@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
 
 body {
-  font-family: "Frutiger", "Arial", sans-serif;
-  font-size: 16pt;
+  font-family: "Arial", "Frutiger", sans-serif;
 }
 
 h1, h2, h3 {
-  font-family: "Frutiger", "Arial", sans-serif;
+  font-family: "Arial", "Frutiger", sans-serif;
+}
+
+.remark-code, .remark-inline-code {
+  font-family: 'Roboto Mono', monospace;
 }
 
